@@ -23,6 +23,9 @@ The full RNA-seq DE CSV was subsequently uploaded from a checksum-matching
 attachment: 19,130 data rows, seven columns, 2,244,278 bytes. The total is now
 37 original files. The other three accompanying RNA-seq CSV attachments matched
 the existing copies byte-for-byte and were not duplicated.
+The full microarray DE CSV was also uploaded from a checksum-matching attachment:
+42,179 data rows, seven columns, 5,065,409 bytes. There are now 38 copied original
+files; both full DE tables and the main report are included directly.
 The public-input downloader was executed successfully: both GEO inputs
 downloaded, matched the supplied Drive MD5 checksums, and the duplicate RNA
 input path was restored. The large input bytes are not committed to GitHub.

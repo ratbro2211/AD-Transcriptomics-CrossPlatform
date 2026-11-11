@@ -21,7 +21,7 @@ brain transcriptomics datasets.
 
 ## Original project files from Drive
 
-The [supplied project archive](supplied_project/README.md) preserves **37 original
+The [supplied project archive](supplied_project/README.md) preserves **38 original
 files**, including all original scripts, both platforms' figures and smaller
 tables, the RNA-seq pipeline explanation PDF, and the original script ZIP.
 Browse the [RNA-seq gallery](supplied_project/RNA_seq/README.md) and
@@ -30,9 +30,10 @@ Browse the [RNA-seq gallery](supplied_project/RNA_seq/README.md) and
 The [full project report PDF](supplied_project/Transcriptomic%20Analysis%20of%20Alzheimer%27s%20Disease%20A%20Cross-Platform%20Comparative%20Stud.pdf)
 is included directly, using the matching uploaded attachment. The
 [full RNA-seq DE results](supplied_project/RNA_seq/all_DE_results_rnaseq.csv)
-are also included directly (19,130 rows). Only the full microarray DE CSV remains
-linked to Drive because the authenticated media connection's 1 MB response
-limit blocked its download. Large public GEO inputs have a checksum-verified
+are also included directly (19,130 rows), as are the
+[full microarray DE results](supplied_project/micro_array/de_results_microarray.csv)
+(42,179 rows). All previously blocked reports and result tables are now included.
+Large public GEO inputs have a checksum-verified
 [download script](supplied_project/download_public_inputs.R).
 See the [complete source inventory](supplied_project/FILE_MANIFEST.tsv) for exact
 per-file status. Original materials are preserved, not silently replaced by the
@@ -109,6 +110,9 @@ samples. Its labels report 527 upregulated and 412 downregulated features at the
 plotted cutoffs. These displayed counts are not a fresh rerun.
 
 ![Microarray volcano plot](supplied_project/micro_array/volcano_microarray.png)
+
+[Download the full supplied microarray DE table—42,179 rows](supplied_project/micro_array/de_results_microarray.csv).
+These are result rows as supplied, not a claim of 42,179 unique genes or a fresh rerun.
 
 ### GO Biological Process enrichment
 

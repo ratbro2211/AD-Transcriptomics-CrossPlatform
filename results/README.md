@@ -15,4 +15,5 @@ executable provenance remains unresolved.
 New cross-platform outputs are written under `results/rerun/`; they do not
 overwrite these artifacts. The full supplied RNA-seq DE table is included at
 `supplied_project/RNA_seq/all_DE_results_rnaseq.csv`. The full microarray DE
-table remains linked from its gallery; verified raw RNA-seq counts are not included.
+table is included at `supplied_project/micro_array/de_results_microarray.csv`.
+Verified raw RNA-seq counts are not included.

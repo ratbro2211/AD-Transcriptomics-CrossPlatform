@@ -7,15 +7,15 @@ corrected analysis code at the repository root.
 
 ## Contents and status
 
-- **37 original files copied byte-for-byte**, with their Drive MD5 checksums
+- **38 original files copied byte-for-byte**, with their Drive MD5 checksums
   verified before publication.
 - Original `Scripts/` includes all eight R scripts and the supplied ZIP bundle.
   These are historical source code, **not the corrected entry points**.
 - `RNA_seq/` contains six original figures, three smaller CSVs, and the pipeline
   explanation PDF, plus the full 19,130-row DE results CSV. Its input metadata
   are under `GSE104704/`.
-- `micro_array/` contains six original figures, the model-results CSV and the
-  full supplied GO/KEGG enrichment tables.
+- `micro_array/` contains five original figures, the model-results CSV, the
+  full supplied GO/KEGG enrichment tables, and the full 42,179-row DE results CSV.
 - The main project report PDF was added from the uploaded attachment and
   checksum-matched to its Drive original.
 - Root-level cross-platform figures, two summary/overlap CSVs and
@@ -45,20 +45,19 @@ CSV attachments were identical to the copies already published, so they were
 not duplicated. Uploading these files does not independently validate their
 analysis or performance claims.
 
-## Remaining large private table: linked, not copied
+## Full microarray results: included directly
 
-The authenticated Drive media connection rejected this file because its
-response limit is 1,000,000 bytes. Anonymous download links returned login HTML,
-not the file contents. No Drive sharing permissions were changed.
+[Download the full supplied microarray DE table](micro_array/de_results_microarray.csv)
 
-| Supplied file | Size | Original source |
-|---|---:|---|
-| Microarray `de_results_microarray.csv` | 5,065,409 bytes | [Open full microarray DE table](https://drive.google.com/file/d/1y3Lwwq5G4A3zQ2CaSsODNTRUI5CckOSc/view?usp=drivesdk) |
+The uploaded CSV contains 42,179 data rows and seven columns, and matches the
+original Drive file's MD5 checksum. Row count is not necessarily a unique-gene
+count. The table is preserved unchanged, not recalculated or converted into
+new pipeline output.
 
-This link may require the source owner's Drive permission. **The full microarray
-DE table is not present as a GitHub blob.** To include it directly later, upload
-the exact file here on GitHub or supply it as a chat attachment. No fake result
-CSV or placeholder PDF is used in their place.
+The main report and both full DE tables are now present directly on GitHub.
+No private report or result table remains download-blocked. The three large
+public-input paths below are intentionally represented by a tested downloader,
+not committed data blobs.
 
 ## Large public GEO inputs: reproducible downloads
 

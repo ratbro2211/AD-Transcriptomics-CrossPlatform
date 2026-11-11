@@ -8,7 +8,10 @@ but the archived script uses global DEGs; supplied ML scores are not independent
 
 ![Supplied microarray volcano](volcano_microarray.png)
 
-[Full supplied DE table on Drive—not copied to GitHub](https://drive.google.com/file/d/1y3Lwwq5G4A3zQ2CaSsODNTRUI5CckOSc/view?usp=drivesdk)
+[Full supplied DE table—42,179 rows](de_results_microarray.csv)
+
+The full CSV is included directly and matches the original Drive file's checksum.
+It is preserved unchanged; the number of result rows is not a unique-gene count.
 
 ## Supplied enrichment results
 
