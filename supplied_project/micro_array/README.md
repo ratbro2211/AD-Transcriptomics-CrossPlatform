@@ -1,8 +1,8 @@
 # Microarray: supplied historical outputs
 
 These files are preserved from Drive; **they have not been regenerated using
-the corrected pipeline**. ML scores are not valid independent validation because
-the original feature selection used the full cohort.
+the corrected pipeline**. The report/plot labels state training-only selection,
+but the archived script uses global DEGs; supplied ML scores are not independently verified.
 
 ## Differential expression
 
@@ -22,10 +22,12 @@ These are source outputs, not newly confirmed enrichment results.
 
 [Full supplied KEGG enrichment table](kegg_results_microarray.csv)
 
-## Historical ML—not validated performance
+## Supplied ML—not independently verified
 
-[Original model comparison image](ml_comparison_microarray.png) ·
-[Original feature-importance image](rf_importance_microarray.png) ·
+![Original microarray model comparison](ml_comparison_microarray.png)
+
+![Original microarray feature importance](rf_importance_microarray.png)
+
 [Original score table](ml_model_results_microarray.csv)
 
 The feature-importance rankings are exploratory and do not establish biomarkers.

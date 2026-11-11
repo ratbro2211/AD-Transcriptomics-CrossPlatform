@@ -7,7 +7,7 @@ corrected analysis code at the repository root.
 
 ## Contents and status
 
-- **35 original files copied byte-for-byte**, with their Drive MD5 checksums
+- **36 original files copied byte-for-byte**, with their Drive MD5 checksums
   verified before publication.
 - Original `Scripts/` includes all eight R scripts and the supplied ZIP bundle.
   These are historical source code, **not the corrected entry points**.
@@ -15,6 +15,8 @@ corrected analysis code at the repository root.
   explanation PDF. Its input metadata are under `GSE104704/`.
 - `micro_array/` contains six original figures, the model-results CSV and the
   full supplied GO/KEGG enrichment tables.
+- The main project report PDF was added from the uploaded attachment and
+  checksum-matched to its Drive original.
 - Root-level cross-platform figures, two summary/overlap CSVs and
   `summary_comparison.txt` retain their original names and contents.
 - `.DS_Store` files are excluded. The Drive folder's trailing space in
@@ -23,7 +25,16 @@ corrected analysis code at the repository root.
 The complete source inventory, checksums, links and per-file publication status
 are recorded in [FILE_MANIFEST.tsv](FILE_MANIFEST.tsv).
 
-## Large private files: linked, not copied
+## Main report: included directly
+
+[Read the full project report PDF](Transcriptomic%20Analysis%20of%20Alzheimer%27s%20Disease%20A%20Cross-Platform%20Comparative%20Stud.pdf)
+
+The report is preserved unchanged. Its methods describe training-only ML
+selection, whereas the archived source scripts use global selection. Some
+figure captions also differ from the report's narrative. Inclusion is source
+preservation, not endorsement of every numerical or scientific claim.
+
+## Large private tables: linked, not copied
 
 The authenticated Drive media connection rejected these files because its
 response limit is 1,000,000 bytes. Anonymous download links returned login HTML,
@@ -31,11 +42,10 @@ not the file contents. No Drive sharing permissions were changed.
 
 | Supplied file | Size | Original source |
 |---|---:|---|
-| Main cross-platform study report PDF | 2,068,325 bytes | [Open report](https://drive.google.com/file/d/1v9LXfbqadhM1h3go_C_rrMQFRAcGJ3gM/view?usp=drivesdk) |
 | RNA-seq `all_DE_results_rnaseq.csv` | 2,244,278 bytes | [Open full RNA-seq DE table](https://drive.google.com/file/d/1trEFMMjy6qBOh42OX-t7Da5jjaeQlBv4/view?usp=drivesdk) |
 | Microarray `de_results_microarray.csv` | 5,065,409 bytes | [Open full microarray DE table](https://drive.google.com/file/d/1y3Lwwq5G4A3zQ2CaSsODNTRUI5CckOSc/view?usp=drivesdk) |
 
-These links may require the source owner's Drive permission. **The three files
+These links may require the source owner's Drive permission. **The two tables
 are not present as GitHub blobs.** To include them directly later, upload those
 exact files here on GitHub or supply them as chat attachments. No fake result
 CSV or placeholder PDF is used in their place.
@@ -62,9 +72,10 @@ corrected DESeq2 pipeline.
 ## Interpretation warning
 
 These are historical, supplied artifacts—not newly rerun results. The original
-ML scripts perform global feature selection before validation, so the ML plots,
-scores, predictions and feature-importance rankings are not valid independent
-performance or biomarker-validation evidence.
+ML scripts perform global feature selection before validation, while the report
+and plot labels describe training-only selection. The exact executable provenance
+for those figures remains unresolved. Their scores, predictions and feature
+rankings are not independently verified performance or biomarker evidence.
 
 The source prose and report can contain claims that the corrected README does
 not endorse. In particular, sign reversals alone do not establish a causal

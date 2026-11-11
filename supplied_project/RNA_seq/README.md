@@ -1,8 +1,8 @@
 # RNA-seq: supplied historical outputs
 
 These files are preserved from Drive; **they have not been regenerated using
-the corrected pipeline**. ML scores/predictions are not valid independent
-validation because the original feature selection used the full cohort.
+the corrected pipeline**. The report/plot descriptions and archived scripts
+disagree about feature selection; supplied ML scores are not independently verified.
 
 ## Differential expression
 
@@ -21,10 +21,12 @@ These are source outputs, not newly confirmed enrichment results.
 
 ![Supplied KEGG dot plot](kegg_dotplot_rnaseq.png)
 
-## Historical ML—not validated performance
+## Supplied ML—not independently verified
 
-[Original model comparison image](ml_comparison_rnaseq.png) ·
-[Original feature-importance image](rf_importance_rnaseq.png) ·
+![Original RNA-seq model comparison](ml_comparison_rnaseq.png)
+
+![Original RNA-seq feature importance](rf_importance_rnaseq.png)
+
 [Original score table](ml_model_results_rnaseq.csv) ·
 [Original LOOCV predictions](loocv_predictions_rnaseq.csv)
 

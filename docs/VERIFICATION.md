@@ -15,6 +15,10 @@ The supplied-folder publication adds original archived scripts and a public-data
 downloader. **All 23 R files parse; the same 18 core checks pass.**
 All 35 copied source files were checked against their Drive MD5 checksums,
 and all local Markdown links were checked for valid targets.
+The main report was then added from a checksum-matching chat attachment,
+bringing the total to 36 original files. All 11 newly attached platform plots
+were byte-identical to the plots already published in `supplied_project/`.
+They are now embedded directly in the root README and platform galleries.
 The public-input downloader was executed successfully: both GEO inputs
 downloaded, matched the supplied Drive MD5 checksums, and the duplicate RNA
 input path was restored. The large input bytes are not committed to GitHub.

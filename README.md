@@ -13,21 +13,24 @@ brain transcriptomics datasets.
 > **Research status:** this repository contains corrected analysis code and
 > clearly identified **historical supplied outputs**. Syntax and dependency-free
 > regression checks have passed; the corrected biological and ML pipelines have
-> **not been run end-to-end**. Historical classification scores are invalid as
-> performance estimates because their feature selection used all samples before
-> validation. No diagnostic biomarker or clinical performance is established.
+> **not been run end-to-end**. The archived ML scripts use global feature
+> selection, while the supplied report and plot labels describe training-only
+> selection. This provenance mismatch has not been resolved, so the supplied ML
+> scores are **not independently verified**. Scores from the global-selection
+> scripts would be biased. No clinical performance or biomarker is established.
 
 ## Original project files from Drive
 
-The [supplied project archive](supplied_project/README.md) preserves **35 original
+The [supplied project archive](supplied_project/README.md) preserves **36 original
 files**, including all original scripts, both platforms' figures and smaller
 tables, the RNA-seq pipeline explanation PDF, and the original script ZIP.
 Browse the [RNA-seq gallery](supplied_project/RNA_seq/README.md) and
 [microarray gallery](supplied_project/micro_array/README.md).
 
-The main report PDF and two large full-DE CSVs are linked to Drive rather than
-copied because the authenticated media connection's 1 MB response limit blocked
-their download. Large public GEO inputs have a checksum-verified
+The [full project report PDF](supplied_project/Transcriptomic%20Analysis%20of%20Alzheimer%27s%20Disease%20A%20Cross-Platform%20Comparative%20Stud.pdf)
+is now included directly, using the matching uploaded attachment. Two large
+full-DE CSVs remain linked to Drive because the authenticated media connection's
+1 MB response limit blocked their download. Large public GEO inputs have a checksum-verified
 [download script](supplied_project/download_public_inputs.R).
 See the [complete source inventory](supplied_project/FILE_MANIFEST.tsv) for exact
 per-file status. Original materials are preserved, not silently replaced by the
@@ -43,6 +46,95 @@ corrected code or endorsed as newly validated analysis.
 **Important:** GSE132903 is not Affymetrix. Its pipeline uses limma on processed
 log-expression, not voom. GSE104704's normalized supplementary table is not a raw
 count matrix and must not be rounded/truncated for DESeq2.
+
+## RNA-seq results — supplied figures
+
+These are the original GSE104704 figures, not outputs of the corrected pipeline.
+Enrichment plots describe over-representation, not proof of pathway activation.
+
+### Differential expression
+
+Each point represents a tested gene in the supplied AD-versus-control analysis.
+The horizontal position shows log2 fold change and the vertical position shows
+statistical significance; cutoffs are those printed on the original figure.
+
+![RNA-seq volcano plot](supplied_project/RNA_seq/volcano_rnaseq.png)
+
+### GO Biological Process enrichment
+
+The bar plot summarizes represented genes for the displayed GO terms. The dot
+plot provides a complementary view of the supplied enrichment analysis; use its
+axis and size/color legends to distinguish gene ratio, count and adjusted p.
+
+![RNA-seq GO bar plot](supplied_project/RNA_seq/go_barplot_rnaseq.png)
+
+![RNA-seq GO dot plot](supplied_project/RNA_seq/go_dotplot_rnaseq.png)
+
+### KEGG pathway enrichment
+
+The displayed pathways are enrichment results from the supplied analysis, not
+newly recomputed findings or evidence that a pathway causes AD.
+
+![RNA-seq KEGG dot plot](supplied_project/RNA_seq/kegg_dotplot_rnaseq.png)
+
+### Reported ML comparison — not independently verified
+
+The plot reports internal LOOCV performance. The report/plot labels and archived
+code do not document the same feature-selection procedure, so the scores should
+not be treated as independently verified generalization performance.
+
+![Supplied RNA-seq model comparison](supplied_project/RNA_seq/ml_comparison_rnaseq.png)
+
+### Random Forest feature importance
+
+This is the supplied model's feature ranking. Importance is not a gene-level
+significance test and does not establish a clinically validated biomarker.
+
+![Supplied RNA-seq Random Forest importance](supplied_project/RNA_seq/rf_importance_rnaseq.png)
+
+## Microarray results — supplied figures
+
+These are the original GSE132903 figures, separate from the RNA-seq experiment.
+They have not been regenerated using the corrected repository code.
+
+### Differential expression
+
+The original volcano plot shows the AD-versus-ND full-cohort analysis across 195
+samples. Its labels report 527 upregulated and 412 downregulated features at the
+plotted cutoffs. These displayed counts are not a fresh rerun.
+
+![Microarray volcano plot](supplied_project/micro_array/volcano_microarray.png)
+
+### GO Biological Process enrichment
+
+The supplied plot highlights synaptic transport, secretion and signaling-related
+terms. Bar length represents gene count; color encodes adjusted p-value.
+
+![Microarray GO Biological Process plot](supplied_project/micro_array/go_bp_microarray.png)
+
+### KEGG pathway enrichment
+
+The supplied pathways include synaptic vesicle cycle, gap junction and GABAergic
+synapse. This is over-representation of annotated genes, not a directional
+activation measurement.
+
+![Microarray KEGG pathway plot](supplied_project/micro_array/kegg_microarray.png)
+
+### Reported ML comparison — not independently verified
+
+The original figure states training-only limma selection of 500 probes with an
+80/20 split. The archived source script instead selects global DEGs before the
+split. The figure's claimed procedure needs matching executable provenance
+before its performance can be endorsed.
+
+![Supplied microarray model comparison](supplied_project/micro_array/ml_comparison_microarray.png)
+
+### Random Forest feature importance
+
+The supplied figure states that the model was trained on 157 training samples.
+Its ranking describes that model; it is not external biomarker validation.
+
+![Supplied microarray Random Forest importance](supplied_project/micro_array/rf_importance_microarray.png)
 
 ## What is included
 
@@ -144,14 +236,15 @@ the overlap CSV's row count. The individual platform DEG totals need a clean rer
 
 ![Historical DEG overlap](figures/venn_overlap_genes.png)
 
-**Historical ML chart—invalid performance estimates:** retained only for source
-traceability, not evidence of predictive accuracy. LOOCV does not repair feature
-selection performed using all samples before the folds.
+**Historical ML chart—unverified performance estimates:** retained for source
+traceability. The report/plot descriptions of training-only selection conflict
+with global-selection code in the archived scripts. LOOCV would not repair
+feature selection performed using all samples before the folds.
 
 [Open the historical ML comparison—not validated results](figures/ml_comparison_platforms.png)
 
 The [supplied summary CSV](results/cross_platform_summary.csv) also contains
-historical ML scores. Those fields are **not valid validation results**. No “best
+historical ML scores. Those fields are **not independently verified results**. No “best
 accuracy”, “best AUC” or model ranking from that file is promoted as a conclusion.
 
 ## How to run

@@ -14,8 +14,10 @@ The initial publication included the three root PNGs and two root CSVs.
 At the user's subsequent request to publish the supplied project folder,
 35 original files were also copied into `supplied_project/`, including platform
 plots/tables, the pipeline explanation PDF, all original scripts and their ZIP.
-The main report and full platform DE tables are linked, not copied, because the
-Drive media response limit blocked them. Public large inputs are restored by a
+The main report was subsequently added from an uploaded attachment matching
+the Drive file's checksum, bringing the original-file total to 36. Full platform
+DE tables remain linked, not copied, because the Drive media response limit
+blocked them. Public large inputs are restored by a
 checksum-verified downloader. `.DS_Store` is excluded. Exact per-file status is
 recorded in `supplied_project/FILE_MANIFEST.tsv`.
 
@@ -38,6 +40,10 @@ recorded in `supplied_project/FILE_MANIFEST.tsv`.
    The RNA script also used full-cohort fitted VST values. Corrected code starts
    from all raw RNA features or source processed microarray features, with
    training-only feature selection/scaling, and nested LASSO tuning.
+   The supplied report and plot labels describe training-only selection that
+   does not match those archived scripts. Their numerical results therefore
+   remain unverified, rather than being automatically attributed to the
+   particular leaky archived implementation.
 6. Enrichment lacked an assay-specific universe. Corrected code supplies mapped
    tested genes and handles insufficient/empty results.
 7. Root run commands and comparison relative paths did not agree. All corrected
