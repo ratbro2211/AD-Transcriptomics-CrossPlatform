@@ -1,0 +1,17 @@
+.DS_Store
+*.rds
+*.RData
+*.Rhistory
+.Rproj.user/
+/data/*
+!/data/README.md
+RNA_seq_analysis/RDS/
+Microarray_analysis/RDS/
+RNA_seq_analysis/results/
+Microarray_analysis/results/
+RNA_seq_analysis/figures/
+Microarray_analysis/figures/
+results/*.csv
+!results/cross_platform_summary.csv
+!results/overlap_DE_genes.csv
+results/rerun/
