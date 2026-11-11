@@ -10,9 +10,14 @@ ending in `_1.R` are the microarray enrichment/ML versions, as confirmed by
 their dataset headers. Original checksums and file IDs are recorded in
 `SOURCE_MANIFEST.tsv`; the revised scripts are not claimed to be exact copies.
 
-Only the three root PNGs and two requested root CSVs are included as historical
-artifacts. Large platform inputs, PDFs, `.DS_Store`, ZIP duplicates and other
-unrequested files are not published.
+The initial publication included the three root PNGs and two root CSVs.
+At the user's subsequent request to publish the supplied project folder,
+35 original files were also copied into `supplied_project/`, including platform
+plots/tables, the pipeline explanation PDF, all original scripts and their ZIP.
+The main report and full platform DE tables are linked, not copied, because the
+Drive media response limit blocked them. Public large inputs are restored by a
+checksum-verified downloader. `.DS_Store` is excluded. Exact per-file status is
+recorded in `supplied_project/FILE_MANIFEST.tsv`.
 
 ## Problems found
 

@@ -1,0 +1,6 @@
+"Model","Accuracy","Sensitivity","Specificity"
+"Random Forest",78.9,78.9,78.9
+"SVM (radial)",78.9,78.9,78.9
+"LASSO (22 genes)",86.8,89.5,84.2
+"KNN (k=5)",73.7,73.7,73.7
+"Naive Bayes",73.7,68.4,78.9

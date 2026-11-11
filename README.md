@@ -17,6 +17,22 @@ brain transcriptomics datasets.
 > performance estimates because their feature selection used all samples before
 > validation. No diagnostic biomarker or clinical performance is established.
 
+## Original project files from Drive
+
+The [supplied project archive](supplied_project/README.md) preserves **35 original
+files**, including all original scripts, both platforms' figures and smaller
+tables, the RNA-seq pipeline explanation PDF, and the original script ZIP.
+Browse the [RNA-seq gallery](supplied_project/RNA_seq/README.md) and
+[microarray gallery](supplied_project/micro_array/README.md).
+
+The main report PDF and two large full-DE CSVs are linked to Drive rather than
+copied because the authenticated media connection's 1 MB response limit blocked
+their download. Large public GEO inputs have a checksum-verified
+[download script](supplied_project/download_public_inputs.R).
+See the [complete source inventory](supplied_project/FILE_MANIFEST.tsv) for exact
+per-file status. Original materials are preserved, not silently replaced by the
+corrected code or endorsed as newly validated analysis.
+
 ## Datasets
 
 | Dataset | Platform | Analysis samples | Tissue |
@@ -51,6 +67,7 @@ AD-Transcriptomics-CrossPlatform/
 ├── figures/                   # Three historical supplied images
 ├── results/                   # Two historical supplied tables
 ├── docs/                      # Source audit, provenance and verification limits
+├── supplied_project/          # Original Drive files, galleries and source links
 └── tests/test_core.R
 ```
 

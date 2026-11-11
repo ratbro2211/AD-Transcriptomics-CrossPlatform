@@ -10,7 +10,14 @@ Command executed from the repository root:
 Rscript tests/test_core.R
 ```
 
-Result: **18 checks passed; all 14 R files parsed successfully.**
+Initial publication: **18 checks passed; all 14 R files parsed successfully.**
+The supplied-folder publication adds original archived scripts and a public-data
+downloader. **All 23 R files parse; the same 18 core checks pass.**
+All 35 copied source files were checked against their Drive MD5 checksums,
+and all local Markdown links were checked for valid targets.
+The public-input downloader was executed successfully: both GEO inputs
+downloaded, matched the supplied Drive MD5 checksums, and the duplicate RNA
+input path was restored. The large input bytes are not committed to GitHub.
 
 Checks cover:
 

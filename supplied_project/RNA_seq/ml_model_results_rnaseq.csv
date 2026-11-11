@@ -1,0 +1,6 @@
+"Model","Accuracy","Sensitivity","Specificity"
+"Random Forest",95.5,91.7,100
+"SVM",81.8,83.3,80
+"LASSO",100,100,100
+"KNN (k=3)",68.2,91.7,40
+"Naive Bayes",63.6,58.3,70

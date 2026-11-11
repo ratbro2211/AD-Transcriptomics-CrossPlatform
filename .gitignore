@@ -15,3 +15,4 @@ results/*.csv
 !results/cross_platform_summary.csv
 !results/overlap_DE_genes.csv
 results/rerun/
+supplied_project/**/*.txt.gz
