@@ -20,7 +20,7 @@ RNA_seq/loocv_predictions_rnaseq.csv	copied_original	981	99139c3592c03bb89cac77e
 RNA_seq/ml_model_results_rnaseq.csv	copied_original	168	6ab1a9823aca65f0bec897dc1897d46b	https://drive.google.com/file/d/1DRrugSZOgt0cMiJIv65PqPP5sY0wgpq2/view?usp=drivesdk	
 RNA_seq/ml_comparison_rnaseq.png	copied_original	45051	b2ac8769789a5e9150ec9abbbe80db77	https://drive.google.com/file/d/1ETCaBFlg2Z9qJ7vXa1rrDdwqTShrSd-7/view?usp=drivesdk	
 RNA_seq/rf_importance_rnaseq.png	copied_original	66537	f19470194b4901e21fe9b8c67c436e95	https://drive.google.com/file/d/1rQYOAhelyoqhadOLQ18g8REoJTmKdQ25/view?usp=drivesdk	
-RNA_seq/all_DE_results_rnaseq.csv	linked_private_download_limit	2244278	bc52e482bd6312c0d8e8aee4d9057811	https://drive.google.com/file/d/1trEFMMjy6qBOh42OX-t7Da5jjaeQlBv4/view?usp=drivesdk	
+RNA_seq/all_DE_results_rnaseq.csv	copied_original	2244278	bc52e482bd6312c0d8e8aee4d9057811	https://drive.google.com/file/d/1trEFMMjy6qBOh42OX-t7Da5jjaeQlBv4/view?usp=drivesdk	not_applicable
 RNA_seq/top20_DE_genes_rnaseq.csv	copied_original	710	05e00f69296c524cb5e039322fc3721d	https://drive.google.com/file/d/1NI7qQ-cB484gzaHwwzwS9TXKNFzaPfFC/view?usp=drivesdk	
 RNA_seq/kegg_dotplot_rnaseq.png	copied_original	104134	c4374067fb9ce845aae3a099e663a9aa	https://drive.google.com/file/d/1DE45kKqkReruWT2pIzZJGLRv5P-ntyc1/view?usp=drivesdk	
 RNA_seq/go_dotplot_rnaseq.png	copied_original	109474	26e56e2bdddffde5d2e16026203b319d	https://drive.google.com/file/d/1_cRnH_WZ8IW9p3bOLgoQDQHxHivyX30k/view?usp=drivesdk	

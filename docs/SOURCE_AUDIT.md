@@ -15,9 +15,10 @@ At the user's subsequent request to publish the supplied project folder,
 35 original files were also copied into `supplied_project/`, including platform
 plots/tables, the pipeline explanation PDF, all original scripts and their ZIP.
 The main report was subsequently added from an uploaded attachment matching
-the Drive file's checksum, bringing the original-file total to 36. Full platform
-DE tables remain linked, not copied, because the Drive media response limit
-blocked them. Public large inputs are restored by a
+the Drive file's checksum. The full RNA-seq DE table was then added from another
+matching attachment, bringing the original-file total to 37. Only the full
+microarray DE table remains linked, not copied, because the Drive media response
+limit blocked it. Public large inputs are restored by a
 checksum-verified downloader. `.DS_Store` is excluded. Exact per-file status is
 recorded in `supplied_project/FILE_MANIFEST.tsv`.
 

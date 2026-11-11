@@ -21,16 +21,18 @@ brain transcriptomics datasets.
 
 ## Original project files from Drive
 
-The [supplied project archive](supplied_project/README.md) preserves **36 original
+The [supplied project archive](supplied_project/README.md) preserves **37 original
 files**, including all original scripts, both platforms' figures and smaller
 tables, the RNA-seq pipeline explanation PDF, and the original script ZIP.
 Browse the [RNA-seq gallery](supplied_project/RNA_seq/README.md) and
 [microarray gallery](supplied_project/micro_array/README.md).
 
 The [full project report PDF](supplied_project/Transcriptomic%20Analysis%20of%20Alzheimer%27s%20Disease%20A%20Cross-Platform%20Comparative%20Stud.pdf)
-is now included directly, using the matching uploaded attachment. Two large
-full-DE CSVs remain linked to Drive because the authenticated media connection's
-1 MB response limit blocked their download. Large public GEO inputs have a checksum-verified
+is included directly, using the matching uploaded attachment. The
+[full RNA-seq DE results](supplied_project/RNA_seq/all_DE_results_rnaseq.csv)
+are also included directly (19,130 rows). Only the full microarray DE CSV remains
+linked to Drive because the authenticated media connection's 1 MB response
+limit blocked its download. Large public GEO inputs have a checksum-verified
 [download script](supplied_project/download_public_inputs.R).
 See the [complete source inventory](supplied_project/FILE_MANIFEST.tsv) for exact
 per-file status. Original materials are preserved, not silently replaced by the
@@ -59,6 +61,9 @@ The horizontal position shows log2 fold change and the vertical position shows
 statistical significance; cutoffs are those printed on the original figure.
 
 ![RNA-seq volcano plot](supplied_project/RNA_seq/volcano_rnaseq.png)
+
+[Download the full supplied RNA-seq DE table—19,130 rows](supplied_project/RNA_seq/all_DE_results_rnaseq.csv).
+This is the unchanged supplied result table, not a newly computed analysis.
 
 ### GO Biological Process enrichment
 

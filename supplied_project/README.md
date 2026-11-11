@@ -7,12 +7,13 @@ corrected analysis code at the repository root.
 
 ## Contents and status
 
-- **36 original files copied byte-for-byte**, with their Drive MD5 checksums
+- **37 original files copied byte-for-byte**, with their Drive MD5 checksums
   verified before publication.
 - Original `Scripts/` includes all eight R scripts and the supplied ZIP bundle.
   These are historical source code, **not the corrected entry points**.
 - `RNA_seq/` contains six original figures, three smaller CSVs, and the pipeline
-  explanation PDF. Its input metadata are under `GSE104704/`.
+  explanation PDF, plus the full 19,130-row DE results CSV. Its input metadata
+  are under `GSE104704/`.
 - `micro_array/` contains six original figures, the model-results CSV and the
   full supplied GO/KEGG enrichment tables.
 - The main project report PDF was added from the uploaded attachment and
@@ -34,20 +35,29 @@ selection, whereas the archived source scripts use global selection. Some
 figure captions also differ from the report's narrative. Inclusion is source
 preservation, not endorsement of every numerical or scientific claim.
 
-## Large private tables: linked, not copied
+## Full RNA-seq results: included directly
 
-The authenticated Drive media connection rejected these files because its
+[Download the full supplied RNA-seq DE table](RNA_seq/all_DE_results_rnaseq.csv)
+
+The uploaded CSV contains 19,130 data rows and matches the original Drive
+file's MD5 checksum. The accompanying LOOCV predictions, model-results and top-20
+CSV attachments were identical to the copies already published, so they were
+not duplicated. Uploading these files does not independently validate their
+analysis or performance claims.
+
+## Remaining large private table: linked, not copied
+
+The authenticated Drive media connection rejected this file because its
 response limit is 1,000,000 bytes. Anonymous download links returned login HTML,
 not the file contents. No Drive sharing permissions were changed.
 
 | Supplied file | Size | Original source |
 |---|---:|---|
-| RNA-seq `all_DE_results_rnaseq.csv` | 2,244,278 bytes | [Open full RNA-seq DE table](https://drive.google.com/file/d/1trEFMMjy6qBOh42OX-t7Da5jjaeQlBv4/view?usp=drivesdk) |
 | Microarray `de_results_microarray.csv` | 5,065,409 bytes | [Open full microarray DE table](https://drive.google.com/file/d/1y3Lwwq5G4A3zQ2CaSsODNTRUI5CckOSc/view?usp=drivesdk) |
 
-These links may require the source owner's Drive permission. **The two tables
-are not present as GitHub blobs.** To include them directly later, upload those
-exact files here on GitHub or supply them as chat attachments. No fake result
+This link may require the source owner's Drive permission. **The full microarray
+DE table is not present as a GitHub blob.** To include it directly later, upload
+the exact file here on GitHub or supply it as a chat attachment. No fake result
 CSV or placeholder PDF is used in their place.
 
 ## Large public GEO inputs: reproducible downloads

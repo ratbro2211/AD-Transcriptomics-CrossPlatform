@@ -13,5 +13,6 @@ whereas the report and plot labels claim training-only selection; their exact
 executable provenance remains unresolved.
 
 New cross-platform outputs are written under `results/rerun/`; they do not
-overwrite these artifacts. Full historical platform DE tables and raw count
-inputs are not included.
+overwrite these artifacts. The full supplied RNA-seq DE table is included at
+`supplied_project/RNA_seq/all_DE_results_rnaseq.csv`. The full microarray DE
+table remains linked from its gallery; verified raw RNA-seq counts are not included.

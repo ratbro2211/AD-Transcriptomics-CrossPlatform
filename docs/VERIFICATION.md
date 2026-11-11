@@ -19,6 +19,10 @@ The main report was then added from a checksum-matching chat attachment,
 bringing the total to 36 original files. All 11 newly attached platform plots
 were byte-identical to the plots already published in `supplied_project/`.
 They are now embedded directly in the root README and platform galleries.
+The full RNA-seq DE CSV was subsequently uploaded from a checksum-matching
+attachment: 19,130 data rows, seven columns, 2,244,278 bytes. The total is now
+37 original files. The other three accompanying RNA-seq CSV attachments matched
+the existing copies byte-for-byte and were not duplicated.
 The public-input downloader was executed successfully: both GEO inputs
 downloaded, matched the supplied Drive MD5 checksums, and the duplicate RNA
 input path was restored. The large input bytes are not committed to GitHub.
